@@ -1,0 +1,17 @@
+{
+  "name": "z1zon-todo-client",
+  "version": "0.1.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/z1zon/z1zon-todo-client.git",
+  "authors": [
+    {
+      "name": "Chanyeong Cho",
+      "email": "cyjo9603@naver.com"
+    },
+    {
+      "name": "Jihoon Oh",
+      "email": "hihiwwg@gmail.com"
+    }
+  ],
+  "license": "MIT"
+}
