@@ -13,5 +13,8 @@
       "email": "hihiwwg@gmail.com"
     }
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
