@@ -16,5 +16,11 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
