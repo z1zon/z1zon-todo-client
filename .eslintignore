@@ -1,2 +1,5 @@
 # config
 *.config.js
+
+# build
+dist
