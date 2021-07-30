@@ -3,3 +3,6 @@
 
 # build
 dist
+
+#type defination
+src/**/*.d.ts

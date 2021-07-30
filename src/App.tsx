@@ -1,5 +1,8 @@
 import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
-const App: React.FC = () => <>init</>;
+import { theme } from '@/theme';
+
+const App: React.FC = () => <ThemeProvider theme={theme}>init</ThemeProvider>;
 
 export default App;
