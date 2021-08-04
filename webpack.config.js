@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const svgToMiniDataURI = require('mini-svg-data-uri');
 
 const prod = process.env.NODE_ENV === 'production';
 
@@ -32,8 +33,19 @@ module.exports = {
         loader: 'ts-loader',
       },
       {
-        test: /\.(png|jpg|svg)$/,
-        use: [{ loader: 'file-loader', options: { outputPath: 'static/images' } }],
+        test: /\.(png|jpg)$/,
+        use: [{ loader: 'url-loader' }],
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              generator: (content) => svgToMiniDataURI(content.toString()),
+            },
+          },
+        ],
       },
     ],
   },
