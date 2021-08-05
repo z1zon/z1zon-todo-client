@@ -1,0 +1,8 @@
+# config
+*.config.js
+
+# build
+dist
+
+#type defination
+src/**/*.d.ts
