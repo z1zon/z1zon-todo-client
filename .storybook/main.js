@@ -6,7 +6,13 @@ module.exports = {
     '../src/components/**/*.stories.mdx',
     '../src/components/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-control'],
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-essentials',
+    '@storybook/addon-control',
+    '@storybook/addon-knobs',
+    '@storybook/addon-actions',
+  ],
   typescript: {
     check: false,
     checkOptions: {},
