@@ -18,6 +18,7 @@ module.exports = {
     '@storybook/addon-controls',
     '@storybook/addon-knobs',
     '@storybook/addon-actions',
+    '@storybook/addon-jest',
   ],
   typescript: {
     check: false,
