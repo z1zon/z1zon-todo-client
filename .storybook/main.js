@@ -1,6 +1,12 @@
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
+
 module.exports = {
   core: {
     builder: 'webpack5',
+  },
+  webpackFinal: async (config, { configType }) => {
+    config.resolve.plugins = [new TsconfigPathsPlugin()];
+    return config;
   },
   stories: [
     '../src/components/**/*.stories.mdx',
@@ -9,7 +15,7 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-control',
+    '@storybook/addon-controls',
     '@storybook/addon-knobs',
     '@storybook/addon-actions',
   ],
